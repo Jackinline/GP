@@ -29,10 +29,8 @@ clone详解：[https://www.cnblogs.com/xiaotian15/p/3665316.html](https://www.cn
 ``` java
 package ljb;
 
-public class CloneTest1
-{
-    public static void main(String[] args) throws Exception
-    {
+public class CloneTest1 {
+    public static void main(String[] args) throws Exception {
         Student1 st0 = new Student1();
         st0.setName("St0");
 
@@ -41,7 +39,7 @@ public class CloneTest1
 
         st0.setFriend(studentA);
 
-        Student1 st1 = (Student1)st0.clone();
+        Student1 st1 = (Student1) st0.clone();
         //这个是调用下面的那个方法，然后把这个这个对象Clone到student
         System.out.println(st0);
         System.out.println(st1);
@@ -49,10 +47,10 @@ public class CloneTest1
     }
 }
 
-class Student1 implements Cloneable
-{
+class Student1 implements Cloneable {
     private String name;
     private Student1 friend;
+
     public Student1 getFriend() {
         return friend;
     }
@@ -61,12 +59,11 @@ class Student1 implements Cloneable
         this.friend = friend;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
-    public void setName(String name)
-    {
+
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -85,15 +82,11 @@ class Student1 implements Cloneable
 
     //第二种深克隆
     @Override
-    public Object clone() throws CloneNotSupportedException
-    {
+    public Object clone() throws CloneNotSupportedException {
         //第一种
-        Student1 st = (Student1)super.clone();
-
-        Student1 friend = st.getFriend();
-        if(friend!=null){
-            Student1 cloneFrieng = (Student1)friend.clone();
-            st.setFriend(cloneFrieng);
+        Student1 st = (Student1) super.clone();
+        if (this.friend != null) {
+            st.setFriend((Student1) this.friend.clone());
         }
         return st;
         //输出
@@ -111,6 +104,7 @@ class Student1 implements Cloneable
                 '}';
     }
 }
+
 
 ```
 
