@@ -19,7 +19,7 @@
 
 ### 2git 学前知识
 
-![1](.\1.png)
+![https://github.com/Jackinline/GP/blob/master/00%E5%B7%A5%E7%A8%8B%E5%B7%A5%E5%85%B7/1.png](https://github.com/Jackinline/GP/blob/master/00%E5%B7%A5%E7%A8%8B%E5%B7%A5%E5%85%B7/1.png)
 
 使用git步骤
 
@@ -70,14 +70,13 @@ HEAD 最新版本
 ### 5.初始分支
 
 
-
-![2](.\2.png)
+![https://github.com/Jackinline/GP/blob/master/00%E5%B7%A5%E7%A8%8B%E5%B7%A5%E5%85%B7/2.png](https://github.com/Jackinline/GP/blob/master/00%E5%B7%A5%E7%A8%8B%E5%B7%A5%E5%85%B7/2.png)
 
 ### 6.详解分支
 
 
 
-![3](.\3.png)
+![https://github.com/Jackinline/GP/blob/master/00%E5%B7%A5%E7%A8%8B%E5%B7%A5%E5%85%B7/3.png](https://github.com/Jackinline/GP/blob/master/00%E5%B7%A5%E7%A8%8B%E5%B7%A5%E5%85%B7/3.png)
 
 命令 git checkout -b dev_luo 创建一个分支
 
@@ -153,7 +152,7 @@ git tag -d v1 删除标签
 
 思路：把master放在远程仓库
 
-![4](.\4.png)
+![https://github.com/Jackinline/GP/blob/master/00%E5%B7%A5%E7%A8%8B%E5%B7%A5%E5%85%B7/4.png](https://github.com/Jackinline/GP/blob/master/00%E5%B7%A5%E7%A8%8B%E5%B7%A5%E5%85%B7/4.png)
 
 ### 10.GitHub和码云
 
